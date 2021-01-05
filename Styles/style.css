@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #CCFFFF;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  position: relative;
+  color: darkred;
+  text-decoration: none;
+  size: 50px;
+}
+
+header .navigation a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+  margin-right: 30px;
+}
+
+header .navigation a:hover{
+  background: #fff;
+  color: #000;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 100%;
+  margin: 100px 100px;
+}
+
+.content .info h2{
+  color: #226A80;
+  font-size: 88px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 5px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info h2 span{
+  color: darkgray;
+  font-size: 78px;
+  font-weight: 600;
+}
+
+.content .info p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .info-btn:hover{
+  background: #0C4F60;
+}
+
+.content img{
+  position: relative;
+  display: flex;
+  height: 500px;
+  align-items: center;
+  margin: 0 200px;
+}
+
+button{
+  border-radius: 50px;
+  border: #000 2px solid;
+  height: 50px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  flex-direction: column;
+}
+
+.content .Oberarm{
+  position: relative; 
+  right: 35%;
+  top: 30%;
+}
+
+.content .Unterarm{
+  position: relative; 
+  right: 35%;
+  top: 40%;
+}
+
+.content .Oberschenkel{
+  position: relative; 
+  right: 35%;
+  top: 50%;
+}
+
+.content .Unterschenkel{
+  position: relative; 
+  right: 35%;
+  top: 60%;
+}
+
+.content .Fuß{
+  position: relative; 
+  right: 35%;
+  top: 70%;
+}
+
+.media-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a{
+  bottom: 10px;
+  position: relative;
+  color: #111;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+  margin-right: 60px;
+}
+
+.media-icons a:hover{
+  transform: scale(1.5);
+}
+
+
+
+/* Responsive styles */
+
+@media (max-width: 850px){
+
+  
+  header .navigation{
+    display: none;
+  }
+
+  .content .info h2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .content .info h2 span{
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px){
+
+  .content .info h2{
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .content .info h2 span{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}
