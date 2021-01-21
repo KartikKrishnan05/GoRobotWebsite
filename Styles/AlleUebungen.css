@@ -127,22 +127,7 @@ header .navigation a:hover{
 }
 
 
-.main-container{
-  width: 90vw;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-.main-container > h2{
-  text-align: center;
-  padding: 10px 0;
-  font-size: 32px;
-}
-.main-container > p{
-  font-weight: 300;
-  padding: 10px 0;
-  opacity: 0.7;
-  text-align: center;
-}
+
 .category-head{
   margin: 30px 0;
 }
