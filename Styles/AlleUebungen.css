@@ -127,7 +127,6 @@ header .navigation a:hover{
 }
 
 
-
 .category-head{
   margin: 30px 0;
 }
@@ -223,6 +222,10 @@ header .navigation a:hover{
   line-height: 1.8;
 }
 .read-btn{
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
   border: none;
   padding: 8px 15px;
   display: block;
@@ -238,6 +241,7 @@ header .navigation a:hover{
 .read-btn:hover{
   background: #f6f6f6;
 }
+
 
 
 
