@@ -103,6 +103,14 @@ header .navigation a:hover{
   display: block;
 }
 
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
 /* Style the buttons */
 .btn {
   position: relative;

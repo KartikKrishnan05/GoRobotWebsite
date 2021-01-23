@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #CCFFFF;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  position: relative;
+  color: darkred;
+  text-decoration: none;
+  size: 50px;
+}
+
+header .navigation a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+  margin-right: 30px;
+}
+
+header .navigation a:hover{
+  background: #fff;
+  color: #000;
+}
+
+.media-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a{
+  bottom: 0px;
+  position: relative;
+  color: #111;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: transform;
+}
+
+.media-icons a:not(:last-child){
+  margin-right: 60px;
+}
+
+.media-icons a:hover{
+  transform: scale(1.5);
+}
+
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* Style the buttons */
+.btn {
+  position: relative;
+  top: 25%;
+  left: 40%;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+.category-head{
+  margin: 30px 0;
+}
+.category-head ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.category-title{
+  flex: 0 0 calc(16.6667% - 10px);
+  display: flex;
+  justify-content:center;
+  background: #a8a8a8;
+  padding: 12px;
+  color: #fff;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.category-title:hover{
+  opacity: 0.7;
+}
+.category-title li{
+  padding: 0 10px;
+}
+.category-title span{
+  color: #222;
+}
+
+/** single post **/
+.posts-main-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.posts-main-container > div{
+  box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
+}
+.post-img{
+  position: relative;
+}
+.category-name{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+.Leicht .category-name{
+  background: #00a7ea;
+}
+.Schwer .category-name{
+  background: #f03250;
+}
+.kurz .category-name{
+  background: #f0544f;
+}
+.lang .category-name{
+  background: #2c2a4a;
+}
+.OG .category-name{
+  background: #a1e44d;
+}
+
+
+.post-content{
+  padding: 25px;
+}
+.post-content-top{
+  background: #80ced7;
+  color: #fff;
+  opacity: 0.8;
+  padding: 5px 0 5px 15px;
+}
+.post-content-top span{
+  padding-right: 20px;
+}
+.post-content-top .fa-comment, .post-content-top .fa-calendar{
+  padding-right: 5px;
+}
+.post-content h2{
+  font-size: 22px;
+  padding: 12px 0;
+  font-weight: 400;
+}
+.post-content p{
+  opacity: 0.7;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.read-btn{
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  display: block;
+  margin: 5px auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  border: 1px solid #292929;
+  background: transparent;
+  margin-bottom: 40px;
+}
+
+.read-btn:hover{
+  background: #f6f6f6;
+}
+
+
+
+
+/***************/
+@media(max-width: 1170px){
+  .posts-main-container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media(max-width: 768px){
+  .posts-main-container{
+      grid-template-columns: 1fr;
+  }
+}
+
+
+/***********/
+
+.active{
+  background: #f0544f;
+}
+
+@media (max-width: 850px){
+
+  
+  header .navigation{
+    display: none;
+  }
+}
+
+@media (max-width: 560px){
+
+}
