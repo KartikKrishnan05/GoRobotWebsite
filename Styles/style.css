@@ -102,6 +102,7 @@ button{
   cursor: pointer;
   letter-spacing: 2px;
   padding: 10px 20px;
+  width: 175px;
 }
 
 .buttons{
@@ -111,34 +112,46 @@ button{
   flex-direction: column;
 }
 
-.content .Oberarm{
+.content .Schultern{
   position: relative; 
   right: 35%;
   top: 30%;
 }
 
-.content .Unterarm{
+.content .Rumpf{
   position: relative; 
   right: 35%;
   top: 40%;
 }
 
-.content .Oberschenkel{
+.content .Arme{
   position: relative; 
   right: 35%;
   top: 50%;
 }
 
-.content .Unterschenkel{
+.content .Brust{
   position: relative; 
   right: 35%;
   top: 60%;
 }
 
-.content .Fuß{
+.content .Rücken{
   position: relative; 
   right: 35%;
   top: 70%;
+}
+
+.content .Bauch{
+  position: relative; 
+  right: 35%;
+  top: 80%;
+}
+
+.content .Beine{
+  position: relative; 
+  right: 35%;
+  top: 90%;
 }
 
 .media-icons{
