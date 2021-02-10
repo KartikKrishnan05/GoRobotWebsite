@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  </title>
+    <link rel="stylesheet" href="/Styles/EinzelÜbung.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+  <body>
+
+    <section>
+      <header>
+        <h2><a href="/index.html" class="logo"> GO ROBOT </a></h2>
+        <div class="navigation">
+          <a href="/index.html">Home</a>
+          <a href="/AlleUebungen.html">Alle Übungen </a>
+          <a href="/About.html">About</a>
+          <a href="/Contact.html">Contact</a>
+        </div>
+      </header>
+
+
+      <h2> Armzieher </h2>
+
+      
+
+      <div class="main-container">
+        <p id="exerciseDetails">In die Rückenlage gehen, die Hände mit durchgestreckten Ellbogen zur Decke strecken, bis die Schulterblätter abheben. Dies 10 Sekunden halten. Wieder in die Ausgangsposition zurück, dabei aber die Ellbogen immer gestreckt lassen. Dies 5 Mal wiederholen
+          <br> <br>
+          Variante: Hanteln oder sonstige Gewichte in die Hände nehmen und so die Übung machen.
+          
+          </p>
+      </div>
+
+
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </section>
+
+    <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+  
+      // Javascript for image slider manual navigation
+      var manualNav = function(manual){
+        slides.forEach((slide) => {
+          slide.classList.remove('active');
+  
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+        });
+  
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+  
+      // Javascript for image slider autoplay navigation
+      var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+  
+        var repeater = () => {
+          setTimeout(function(){
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove('active');
+            });
+  
+          slides[i].classList.add('active');
+          btns[i].classList.add('active');
+          i++;
+  
+          if(slides.length == i){
+            i = 0;
+          }
+          if(i >= slides.length){
+            return;
+          }
+          repeater();
+        }, 10000);
+        }
+        repeater();
+      }
+      repeat();
+      </script>
+
+  </body>
+</html>
