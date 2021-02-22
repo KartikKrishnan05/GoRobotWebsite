@@ -78,10 +78,18 @@ header .navigation a:hover{
   transform: scale(1.5);
 }
 
+.about-section{
+  display: flex;
+}
+
 img{
   display: flex;
-  
+  align-self: left;
+  width: 900px;
+  height: auto; 
 }
+
+
 
 .inner-container{
     width: 55%;
