@@ -107,7 +107,7 @@ header .navigation a:hover{
 
 }
 
-.contact-info{
+.Kontakt-info{
   display: flex;
   width: 100%;
   max-width: 1200px;
@@ -164,7 +164,7 @@ header .navigation a:hover{
 
 
 @media screen and (max-width:800px) {
-  .contact-info{
+  .Kontakt-info{
     flex-direction: column;
   }
   .card{

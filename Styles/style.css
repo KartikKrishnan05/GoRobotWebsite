@@ -56,14 +56,29 @@ header .navigation a:hover{
 
 .content{
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: space-between;
   max-width: 100%;
   margin: 100px 100px;
 }
 
+.info{
+  max-width: 40%;
+}
+
+.img{
+  max-width: 30%;
+  height: 100%;
+}
+
+.allbtn{
+  max-width: 30%;
+}
+
 .content .info h2{
   color: #226A80;
-  font-size: 88px;
+  font-size: 100px;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 5px;
@@ -78,7 +93,7 @@ header .navigation a:hover{
 }
 
 .content .info p{
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 40px;
 }
@@ -91,8 +106,6 @@ header .navigation a:hover{
   position: relative;
   display: flex;
   height: 500px;
-  align-items: center;
-  margin: 0 200px;
 }
 
 button{

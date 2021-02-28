@@ -78,13 +78,13 @@ header .navigation a:hover{
   transform: scale(1.5);
 }
 
-.about-section{
+.Über uns-section{
   display: flex;
 }
 
 img{
   display: flex;
-  align-self: left;
+  align-self: center;
   width: 900px;
   height: auto; 
 }
@@ -92,9 +92,20 @@ img{
 
 
 .inner-container{
-    width: 55%;
-    float: right;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
     padding: 150px;
+}
+
+
+.bild{
+  width: 40%;
+}
+
+.text{
+  width: 40%;
 }
 
 .inner-container h1{
@@ -103,7 +114,7 @@ img{
     font-weight: 900;
 }
 
-.text{
+.textin{
     font-size: 13px;
     color: #545454;
     line-height: 30px;
@@ -125,7 +136,7 @@ img{
 }
 
 @media screen and (max-width:1000px){
-    .about-section{
+    .Über uns-section{
         background-size: 100%;
         padding: 100px 40px;
     }
@@ -135,7 +146,7 @@ img{
 }
 
 @media screen and (max-width:600px){
-    .about-section{
+    .Über uns-section{
         padding: 0;
     }
     .inner-container{
