@@ -68,8 +68,6 @@ header .navigation a:hover{
 }
 
 .img{
-  max-width: 30%;
-  height: 100%;
 }
 
 .allbtn{
@@ -103,8 +101,7 @@ header .navigation a:hover{
 }
 
 .content img{
-  position: relative;
-  display: flex;
+  align-self: center;
   height: 500px;
 }
 
@@ -116,11 +113,12 @@ button{
   letter-spacing: 2px;
   padding: 10px 20px;
   width: 175px;
+  align-self: center;
 }
 
 .buttons{
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-wrap: wrap; 
   flex-direction: column;
 }

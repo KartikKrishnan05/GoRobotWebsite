@@ -19,7 +19,7 @@
    sodipodi:docname="Bild_index.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
    id="metadata43"><rdf:RDF><cc:Work
-       rdf:Über uns=""><dc:format>image/svg+xml</dc:format><dc:type
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs41" /><sodipodi:namedview
    pagecolor="#ffffff"
@@ -44,7 +44,9 @@
    inkscape:current-layer="Capa_1" />
 <g
    id="g6"
-   transform="translate(-56.984682,4.805937)">
+   transform="matrix(2.4540983,0,0,2.4540983,-143.89276,-80.327804)"
+   inkscape:export-xdpi="127.10458"
+   inkscape:export-ydpi="127.10458">
 	<g
    id="g4">
 		<path
